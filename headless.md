@@ -71,6 +71,7 @@ I used the following command to start the container:
 ## Client Setup
 This is where the rubber meets the road and I admit that this took me several hours to figure out what is the proper way to connect. It is very simple. If you have been trying to set it up but couldn't figure out why you are getting only a chat screen (like this) and what should you do there and how should you start the game, than here is the solution. 
 
-
+Start client: 
+![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_setting1.png "Client main screen")
 
 
