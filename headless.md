@@ -64,8 +64,13 @@ root@maod48jh3:# docker images | grep poker
 rom14700/pokerth-server        latest          8f482f671953   10 months ago   1.17GB
 ```
 I used the following command to start the container:
+
 ```docker run --name pokerth-server -p 7234:7234  -v /path/to/config.xml:/root/.pokerth/config.xml --restart unless-stopped -d  rom14700/pokerth-server```
 
 
 ## Client Setup
 This is where the rubber meets the road and I admit that this took me several hours to figure out what is the proper way to connect. It is very simple. If you have been trying to set it up but couldn't figure out why you are getting only a chat screen (like this) and what should you do there and how should you start the game, than here is the solution. 
+
+
+
+
