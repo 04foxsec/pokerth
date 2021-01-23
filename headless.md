@@ -67,6 +67,7 @@ I used the following command to start the container:
 
 ```docker run --name pokerth-server -p 7234:7234  -v /path/to/config.xml:/root/.pokerth/config.xml --restart unless-stopped -d  rom14700/pokerth-server```
 
+your container is now running (pic)
 
 ## Client Setup
 This is where the rubber meets the road and I admit that this took me several hours to figure out what is the proper way to connect. It is very simple. If you have been trying to set it up but couldn't figure out why you are getting only a chat screen (like this) and what should you do there and how should you start the game, than here is the solution. 
@@ -92,12 +93,12 @@ This is where the rubber meets the road and I admit that this took me several ho
 - change port if necessary
 - set password the same as in the server configuration
 
-External access for your server. 
-- If you are running it in the cloud than you probably have Public IP address. 
-- If you host your ovn server from your local network, than do a port forward on your router to the Internal IP and port of the pokerth server. That will map you internal server port to your public IP's port.
+* External access for your server. 
+- If you are running it in the cloud than your server has Public IP address. Or even an FQDN.  
+- If you host your own server from your local network, than do a [port forward](https://en.wikipedia.org/wiki/Port_forwarding) on your router to the Internal IP and port of the pokerth server. That will map you internal server port to your public IP's port.
 
 
-5.Now, on the main screen choose Internet Game:(because your Headless server hosts an "Internet game" and not a "Netwrok Game"(you are able to connect to this, but you will only see a chat window, but that is all))
+5.Now, on the main screen choose Internet Game:(because your Headless server hosts an "Internet game" and not a "Netwrok Game"(you are able to connect to this also , but you will only see a chat window, but that is all))(pic needed)
 
 ![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_internet1.png "Inernet game")
 
@@ -107,7 +108,7 @@ External access for your server.
 
 7. You are in. You can see the other players, can create new game and so on. :)
 
-Tere is one possible error but I don't know why it happens.
+Tere is one possible connectivity error but I don't know why it happens.
 
 ![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_internet3e.png "Server connectivity error")
 
