@@ -43,7 +43,7 @@ Comfiguration file (config.xml) is located ```/var/games/pokerth-server/.pokerth
 pokerth_server can be run manually by ```/var/games/pokerth-server/pokerth_server```
 
 ## Docker
-Docker is the next big thing in application deployment. [LINK](https://docs.docker.com/) PokerTH installation is as comlicated as the package manager install(not at all). The pre-requisit is to have docker installed.
+[Docker](https://docs.docker.com/) is the next big thing in application deployment. :) PokerTH installation is as complicated as the package manager install(not at all). The pre-requisit is to have docker installed on your system.
 
 Let's search the pokerth from the CLI. 
 ```
@@ -111,7 +111,7 @@ Tere is one possible error but I don't know why it happens.
 
 ![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_internet3e.png "Server connectivity error")
 
-Just click connect again and it will let you in some time.
+Just try to re-connect to Internet Game and it will let you in some time.
 
 
 Enjoy!
