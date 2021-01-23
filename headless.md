@@ -71,7 +71,47 @@ I used the following command to start the container:
 ## Client Setup
 This is where the rubber meets the road and I admit that this took me several hours to figure out what is the proper way to connect. It is very simple. If you have been trying to set it up but couldn't figure out why you are getting only a chat screen (like this) and what should you do there and how should you start the game, than here is the solution. 
 
-Start client: 
-![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_setting1.png "Client main screen")
+1. Start client: 
+
+![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths.png "Client main screen")
+
+2. Go to settings
+
+![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_setting1.png "Settings menu")
+
+3. The settings menu:
+
+![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_setting2.png "The settings")
+
+4. Internet settings:
+
+![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_setting3.png "Internet setting")
+
+4a. On Server tab -> Chose: Manual Server Configuration 
+- Fill out you Server address (Internal/External IP or FQDN)*
+- change port if necessary
+- set password the same as in the server configuration
+
+External access for your server. 
+- If you are running it in the cloud than you probably have Public IP address. 
+- If you host your ovn server from your local network, than do a port forward on your router to the Internal IP and port of the pokerth server. That will map you internal server port to your public IP's port.
 
 
+5.Now, on the main screen choose Internet Game:(because your Headless server hosts an "Internet game" and not a "Netwrok Game"(you are able to connect to this, but you will only see a chat window, but that is all))
+
+![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_internet1.png "Inernet game")
+
+6. If everything is right client connects to your server:
+
+![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_internet2.png "Internet game lobby")
+
+7. You are in. You can see the other players, can create new game and so on. :)
+
+Tere is one possible error but I don't know why it happens.
+
+![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_internet3e.png "Server connectivity error")
+
+Just click connect again and it will let you in some time.
+
+
+Enjoy!
