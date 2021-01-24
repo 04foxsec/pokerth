@@ -93,7 +93,7 @@ This is where the rubber meets the road and I admit that this took me several ho
 3a. On Server tab -> Chose: Manual Server Configuration 
 - Fill out you Server address (Internal/External IP or FQDN)*
 - change port if necessary
-- set password the same as in the server configuration
+- set password the same as in the server configuration (optional)
 
 * External access for your server. 
 - If you are running it in the cloud than your server has Public IP address. Or even an FQDN.  
