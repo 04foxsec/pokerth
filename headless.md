@@ -67,28 +67,30 @@ I used the following command to start the container:
 
 ```docker run --name pokerth-server -p 7234:7234  -v /path/to/config.xml:/root/.pokerth/config.xml --restart unless-stopped -d  rom14700/pokerth-server```
 
-your container is now running (pic)
+And your server is running. 
+```
+root@maod48jh3:# docker ps | grep pokerth
+CONTAINER ID   IMAGE                     COMMAND                  CREATED        STATUS           PORTS                        NAMES
+21e3810814ec   rom14700/pokerth-server   "/bin/sh -c ./docker…"   25 hours ago   Up 8 seconds  0.0.0.0:7234->7234/tcp       pokerth-server
+
+```
 
 ## Client Setup
 This is where the rubber meets the road and I admit that this took me several hours to figure out what is the proper way to connect. It is very simple. If you have been trying to set it up but couldn't figure out why you are getting only a chat screen (like this) and what should you do there and how should you start the game, than here is the solution. 
 
-1. Start client: 
-
-![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths.png "Client main screen")
-
-2. Go to settings
+1. Start client and go to settings
 
 ![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_setting1.png "Settings menu")
 
-3. The settings menu:
+2. The settings menu:
 
 ![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_setting2.png "The settings")
 
-4. Internet settings:
+3. Internet settings:
 
 ![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_setting3.png "Internet setting")
 
-4a. On Server tab -> Chose: Manual Server Configuration 
+3a. On Server tab -> Chose: Manual Server Configuration 
 - Fill out you Server address (Internal/External IP or FQDN)*
 - change port if necessary
 - set password the same as in the server configuration
@@ -97,22 +99,28 @@ This is where the rubber meets the road and I admit that this took me several ho
 - If you are running it in the cloud than your server has Public IP address. Or even an FQDN.  
 - If you host your own server from your local network, than do a [port forward](https://en.wikipedia.org/wiki/Port_forwarding) on your router to the Internal IP and port of the pokerth server. That will map you internal server port to your public IP's port.
 
-
-5.Now, on the main screen choose Internet Game:(because your Headless server hosts an "Internet game" and not a "Netwrok Game"(you are able to connect to this also , but you will only see a chat window, but that is all))(pic needed)
+4.Now, on the main screen choose Internet Game: (and enjoy the magic of your own server)
 
 ![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_internet1.png "Inernet game")
 
-6. If everything is right client connects to your server:
+5. If everything is right client connects to your server:
 
 ![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_internet2.png "Internet game lobby")
 
-7. You are in. You can see the other players, can create new game and so on. :)
+6. You are in. You can see the other players, can create new game and so on. :)
 
-Tere is one possible connectivity error but I don't know why it happens.
+## Errors
+1. Tere is one possible connectivity error but I don't know why it happens.
 
 ![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_internet3e.png "Server connectivity error")
 
 Just try to re-connect to Internet Game and it will let you in some time.
+
+2. As most of us tries to connect to a headless server through "Join Network Game". Your Headless server hosts an "Internet game" and not a "Netwrok Game".The problem is that you are able to connect to a headless server through a Network game, but you will only see an "empty" chat window and that is all.
+
+So don't do this when you are connecting to a headless server:
+
+![alt text](https://github.com/04foxsec/pokerth/blob/main/pics/pths_clogin.png "Network game to headless server. DON'T")
 
 
 Enjoy!
